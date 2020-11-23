@@ -1,6 +1,8 @@
-# Welcome to your CDK TypeScript project!
+# IAM Roles/Policies Automation with Code Pipelines
 
-This is a blank project for TypeScript development with CDK.
+Credit:
+<https://aws.amazon.com/blogs/developer/cdk-pipelines-continuous-delivery-for-aws-cdk-applications/>
+
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 

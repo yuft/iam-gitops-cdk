@@ -1,5 +1,5 @@
 import * as cdk from '@aws-cdk/core';
-import { PolicyStatement, Role, ServicePrincipal } from '@aws-cdk/aws-iam';
+import { PolicyStatement, Role, ServicePrincipal, User } from '@aws-cdk/aws-iam';
 
 export class IamGitopsCdkStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
@@ -18,5 +18,6 @@ export class IamGitopsCdkStack extends cdk.Stack {
       assumedBy: new ServicePrincipal('ec2.amazonaws.com')
     });
     
+    // const existingUser = User.fromUserName(this, 'daniel', 'daniel');
   }
 }
