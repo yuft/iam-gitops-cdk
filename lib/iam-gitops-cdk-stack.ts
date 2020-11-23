@@ -13,6 +13,10 @@ export class IamGitopsCdkStack extends cdk.Stack {
       resources: ['*'],
       actions: ['lambda:InvokeFunction'],
     }));
+
+    var newRole = new Role(this, 'NewRole', {
+      assumedBy: new ServicePrincipal('ec2.amazonaws.com')
+    });
     
   }
 }
